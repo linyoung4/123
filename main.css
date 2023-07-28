@@ -1,0 +1,92 @@
+/* main.css */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Nunito', 'Poppins', 'Spoqa Han Sans', 'Noto Sans', 'Montserrat', sans-serif;
+  }
+  
+  /* Style the top navigation */
+  .top {
+    background-color: #333;
+    height: 30px;
+  }
+ .top h3{
+    margin-top: 0;
+    margin-left: 210px;
+    color: #ddd;
+
+ }
+  /* Style the side navigation */
+  .sidenav {
+    margin-top: 60px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 70px; /* 로고 아래에 위치하도록 수정 */
+    left: 0;
+    background-color: #49459D;
+    overflow-x: hidden;
+  }
+  /* Content section */
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  /* Additional styles for elements in the content section */
+  .content h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* logo style */
+  .logo {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+  }
+
+
+/* Add your preferred styling for the image gallery here */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.project-box:hover {
+  border-color: #49459D; /* Change border color on hover */
+}
+
+.project-box a {
+  display: block;
+  text-decoration: none;
+}
+
+.project-box img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.project-name {
+  color: #333;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
