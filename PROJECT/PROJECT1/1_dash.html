@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bd0accc7ba.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.2/dist/echarts.min.js"></script>
+    <link rel="stylesheet" href="../page.css">
+    <title>STI_DASHBOARD</title>
+</head>
+<body>
+    <!-- logo -->
+    <div class="logo">
+      <a href="/index.html">
+        <img src="/img/STI 로고.png" alt="logo" width="200px">
+      </a>
+    </div>
+
+    <!--TOP-->
+    <div class="top">
+      <h3>STI_REPORT</h3>
+    </div>
+      
+    <!--side navigation-->
+    <div class="sidenav">
+      <a href="/index.html"><i class="fa-solid fa-house"></i> HOME</a>
+      <a href="../PROJECT1/1_main.html"><i class="fa-solid fa-paperclip"></i> PROJECT1</a>
+      <a href="../PROJECT2/2_main.html"><i class="fa-solid fa-paperclip"></i> PROJECT2</a>
+      <a href="../PROJECT3/3_main.html"><i class="fa-solid fa-paperclip"></i> PROJECT3</a>
+    </div>
+
+    <div class="content">
+        <div class="topnav">
+            <a href="./1_main.html"><i class="fa-regular fa-file-lines"></i> MAIN</a>
+            <a href="./1_dash.html"><i class="fa-solid fa-chart-simple"></i> DASHBOARD</a>
+            <a href="./1_info.html"><i class="fa-regular fa-lightbulb"></i> INFORMATION</a>
+        </div>
+
+        <div class="aboutporj">
+          <h2>DASHBOARD</h2>
+          <p>프로젝트 명 :</p>
+        </div>
+
+        <div class="charts">
+          <!-- 그래프를 그릴 div 요소 -->
+              <div class="graph-container">
+                <div class="graph-title">Graph 1</div>
+                <div class="graph-content">
+                  <div id="xbar" style="width: 500px; height: 300px;"></div>
+                    <div class="graph-rectangle">
+                      <h3>내용입력</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-container">
+                <div class="graph-title">Graph 2</div>
+                <div class="graph-content">
+                  <div id="xtbar" style="width: 500px; height: 300px;"></div>
+                    <div class="graph-rectangle">
+                      <h3>내용입력</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="graph-container">
+              <div class="graph-title">Graph 2</div>
+              <div class="graph-content">
+                <div id="ybar" style="width: 500px; height: 300px;"></div>
+                  <div class="graph-rectangle">
+                    <h3>내용입력</h3>
+                  </div>
+              </div>
+          </div>
+          <div class="graph-container">
+            <div class="graph-title">Graph 2</div>
+            <div class="graph-content">
+              <div id="ytbar" style="width: 500px; height: 300px;"></div>
+                <div class="graph-rectangle">
+                  <h3>내용입력</h3>
+                </div>
+            </div>
+        </div>
+        <div class="graph-container">
+          <div class="graph-title">Graph 2</div>
+          <div class="graph-content">
+            <div id="pie" style="width: 500px; height: 300px;"></div>
+              <div class="graph-rectangle">
+                <h3>내용입력</h3>
+              </div>
+          </div>
+      </div>
+
+
+          <!-- xbar.js 파일 로드 -->
+          <script src="xbar.js"></script>
+          <script src="xtbar.js"></script>
+          <script src="ybar.js"></script>
+          <script src="ytbar.js"></script>
+          <script src="pie.js"></script>
+        </div>
+        
+
+      </div>
+
+</body>
+</html>
